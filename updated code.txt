@@ -1,0 +1,125 @@
+updated code 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Netflix Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Netflix</h1>
+</header>
+
+<!-- SECTION 1 -->
+<section class="row">
+  <h2>Trending Now</h2>
+  <div class="movie-row">
+    <img src="images/movie1.jpeg">
+    <img src="images/movie2.jpeg">
+    <img src="images/movie3.jpeg">
+    <img src="images/movie4.jpeg">
+  </div>
+</section>
+
+<!-- SECTION 2 -->
+<section class="row">
+  <h2>Popular Movies</h2>
+  <div class="movie-row">
+    <img src="images/movie2.jpeg">
+    <img src="images/movie3.jpeg">
+    <img src="images/movie4.jpeg">
+    <img src="images/movie1.jpeg">
+  </div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="row">
+  <h2>Netflix Originals</h2>
+  <div class="movie-row">
+    <img src="images/movie3.jpeg">
+    <img src="images/movie1.jpeg">
+    <img src="images/movie4.jpeg">
+    <img src="images/movie2.jpeg">
+  </div>
+</section>
+
+</body>
+</html>
+
+css code 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #111;
+  color: white;
+}
+
+/* HEADER */
+header {
+  background: black;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  color: red;
+}
+
+/* ROW SECTION */
+.row {
+  margin: 20px;
+}
+
+.row h2 {
+  margin-bottom: 10px;
+}
+
+/* HORIZONTAL SCROLL */
+.movie-row {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.movie-row::-webkit-scrollbar {
+  height: 6px;
+}
+
+.movie-row::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* MOVIE IMAGE */
+.movie-row img {
+  width: 160px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.movie-row img:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .movie-row img {
+    width: 120px;
+  }
+}
+
+
+java script code
+
